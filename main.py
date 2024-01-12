@@ -58,6 +58,7 @@ if send_button:
   except Exception as e:
     st.error(e)
     
+    
   #チャット履歴の表示
   for index, chat_message in enumerate(reversed(history)):
     if type(chat_message) == HumanMessage: #プロンプト
